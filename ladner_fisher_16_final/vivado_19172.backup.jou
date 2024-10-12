@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Oct  6 13:19:19 2024
+# Process ID: 19172
+# Current directory: D:/CHACKS/ladner_fisher_16
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24052 D:\CHACKS\ladner_fisher_16\ladner_fisher_16.xpr
+# Log file: D:/CHACKS/ladner_fisher_16/vivado.log
+# Journal file: D:/CHACKS/ladner_fisher_16\vivado.jou
+# Running On: DESKTOP-MII2473, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/CHACKS/ladner_fisher_16/ladner_fisher_16.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source ladner_fisher_16.tcl
+add_force {/ladner_fisher_16/A} -radix unsigned {65535 0ns}
+add_force {/ladner_fisher_16/B} -radix unsigned {65535 0ns}
+add_force {/ladner_fisher_16/Cin} -radix hex {0 0ns}
+run 10 us
+close_sim
+launch_simulation
+source ladner_fisher_16.tcl
+add_force {/ladner_fisher_16/A} -radix unsigned {65535 0ns}
+add_force {/ladner_fisher_16/B} -radix unsigned {65535 0ns}
+add_force {/ladner_fisher_16/Cin} -radix hex {0 0ns}
+run 10 us
+add_force {/ladner_fisher_16/A} -radix hex {123 0ns}
+add_force {/ladner_fisher_16/A} -radix hex {1234 0ns}
+add_force {/ladner_fisher_16/B} -radix hex {4567 0ns}
+run 10 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_ladner_fisher_16 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source tb_ladner_fisher_16.tcl
+close_sim
+launch_simulation
+source tb_ladner_fisher_16.tcl
+close_sim
+launch_simulation
+source tb_ladner_fisher_16.tcl
+close_sim
+launch_simulation
+source tb_ladner_fisher_16.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ladner_fisher_16 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source ladner_fisher_16.tcl
+add_force {/ladner_fisher_16/A} -radix unsigned {12345 0ns}
+add_force {/ladner_fisher_16/B} -radix unsigned {54321 0ns}
+add_force {/ladner_fisher_16/Cin} -radix hex {0 0ns}
+run 10 us
+add_force {/ladner_fisher_16/A} -radix unsigned {65535 0ns}
+add_force {/ladner_fisher_16/B} -radix hex {ffff 0ns}
+run 10 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_ladner_fisher_16 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1

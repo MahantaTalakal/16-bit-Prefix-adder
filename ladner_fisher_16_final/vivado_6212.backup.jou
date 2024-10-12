@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Oct  6 14:42:19 2024
+# Process ID: 6212
+# Current directory: D:/CHACKS/ladner_fisher_16 - Copy - Copy - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24032 D:\CHACKS\ladner_fisher_16 - Copy - Copy - Copy\ladner_fisher_16.xpr
+# Log file: D:/CHACKS/ladner_fisher_16 - Copy - Copy - Copy/vivado.log
+# Journal file: D:/CHACKS/ladner_fisher_16 - Copy - Copy - Copy\vivado.jou
+# Running On: DESKTOP-MII2473, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/CHACKS/ladner_fisher_16 - Copy - Copy - Copy/ladner_fisher_16.xpr}
+uupdate_compile_order -fileset sources_1launch_simulation
+source tb_ladner_fisher_16.tcl
+close_sim
+launch_simulation
+source tb_ladner_fisher_16.tcl
+close_sim
+launch_simulation
+source tb_ladner_fisher_16.tcl
+close_sim
+launch_simulation
+source tb_ladner_fisher_16.tcl
+close_sim
+launch_simulation
+source tb_ladner_fisher_16.tcl
+synth_design -top ladner_fisher_16 -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+close_sim

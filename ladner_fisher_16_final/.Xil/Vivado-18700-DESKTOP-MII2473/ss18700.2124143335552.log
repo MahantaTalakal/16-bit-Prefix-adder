@@ -1,0 +1,11 @@
+srcscan starts
+INFO: analyzing module black_box (VERI-9002)
+INFO: analyzing module gen_prop (VERI-9002)
+INFO: analyzing module grey_box (VERI-9002)
+INFO: analyzing module ladner_fisher_16 (VERI-9002)
+INFO: analyzing module sum_prefix (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:ladner_fisher_16
+END of tops
+D:/CHACKS/ladner_fisher_16 - Copy - Copy/ladner_fisher_16.srcs/sources_1/new/ladner_fisher_16.v(23): INFO: compiling module 'ladner_fisher_16_default' (VERI-1018)
+srcscan exits with return value 0

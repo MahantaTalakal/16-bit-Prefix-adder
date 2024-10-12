@@ -1,0 +1,7 @@
+Running: xsim.dir/ladner_fisher_16_behav/xsimk.exe -simmode gui -wdb ladner_fisher_16_behav.wdb -simrunnum 0 -socket 58572
+Design successfully loaded
+Design Loading Memory Usage: 8160 KB (Peak: 8160 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8808 KB (Peak: 8808 KB)
+Simulation CPU Usage: 61 ms

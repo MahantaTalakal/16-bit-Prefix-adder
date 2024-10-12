@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+Test 1: A=0, B=0, Cin=0 => Sum=0000000000000000, Carry_out=0
+Test 2: A=65535, B=0, Cin=0 => Sum=1111111111111111, Carry_out=0
+Test 3: A=65535, B=1, Cin=0 => Sum=0000000000000000, Carry_out=1
+Test 4: A=12345, B=54321, Cin=0 => Sum=0000010001101010, Carry_out=1
+Test 5: A=12345, B=54321, Cin=1 => Sum=1111111111111110, Carry_out=1
+Test 5: A=12345, B=54321, Cin=1 => Sum=1111111111111111, Carry_out=1
+$stop called at time : 60 ns : File "D:/CHACKS/ladner_fisher_16 - Copy - Copy - Copy/ladner_fisher_16.srcs/sim_1/new/tb_ladner_fisher_16.v" Line 84
